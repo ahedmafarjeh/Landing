@@ -1,4 +1,69 @@
 @import "./base.css";
-.main{
-  background-color: red;
+
+body{
+  font-family: var(--mainFont);
+  background-color: #eee;
+}
+.header{
+  background-color: #fff;
+  padding: 15px 0;
+}
+ /* logo */
+.header .logo{
+  display: flex;
+  align-items: center;
+  gap: 2.6px;
+  flex-wrap: wrap;
+}
+.header .logo .img{
+  width: 14.52px;
+  height: 13.98px;
+}
+/* menu */
+.menu{
+  display: none;
+}
+/* nav */
+.nav ul{
+  display: flex;
+  gap: 16.47px;
+  flex-wrap: wrap;  /* دائما بستخدمها عشان موضوع responsive */
+}
+.nav ul li a{
+  color: #101928;
+}
+.active{
+  font-weight: bold;
+}
+/* authenticatin (login , register) */
+.auth{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.auth a{
+  font-family: var(--subFont);
+  border: 2px solid var(--mainColor);
+  font-weight: bold;
+  border-radius: 4.12px;
+}
+.auth .login{
+  padding: 5.35px 26.5px;
+}
+.auth .register{
+  background-color: var(--mainColor);
+  color: white;
+  padding: 5.35px 19.51px;
+}
+
+/* Responsive */
+@media screen and (max-width: 992px){
+  .nav{
+    display: none;
+  }
+  .menu{
+    display: block;
+    order: 2;
+  }
 }

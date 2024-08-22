@@ -15,7 +15,7 @@ body{
   gap: 2.6px;
   flex-wrap: wrap;
 }
-.header .logo .img{
+.header .logo img{
   width: 14.52px;
   height: 13.98px;
 }
@@ -59,11 +59,20 @@ body{
 
 /* Responsive */
 @media screen and (max-width: 992px){
-  .nav{
+  .nav,
+  .auth{
     display: none;
   }
   .menu{
     display: block;
-    order: 2;
+    order: 1;
   }
 }
+ @media screen and (max-width: 576px){
+    .container{
+      width: calc(100% - 50px);
+    }
+    .header .logo img{
+      width: 20px;
+    }
+} 

@@ -2,7 +2,7 @@
 
 body{
   font-family: var(--mainFont);
-  background-color: #eee;
+  /* background-color: #eee; */
 }
 .header{
   background-color: #fff;
@@ -75,6 +75,107 @@ body{
       width: 20px;
     }
 } 
+/* find your course */
+.find-course{
+  background-color: #fff;
+  padding: 0 0 40px 0;
+}
+.find-course .row{
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 400px;
+}
+.find-course-guide{
+  width: calc( ( 100% -400px ) / 2 );
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 20px;
+}
+.find-course-guide h2{
+  width: 200px;
+  font-size: 28px;
+
+}
+.find-course-guide span{
+  color: var(--mainColor);
+}
+.find-course-guide p{
+  width: 450px;
+  color: rgb(155, 155, 155);
+  font-size: 13px;
+}
+.reg-play-video{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 22px;
+}
+.reg-play-video .reg{
+  background-color: var(--mainColor);
+  padding: 8px 30px;
+  border-radius: 5px;
+  color: white;
+}
+.video{
+  display: flex;
+  gap: 5px;
+}
+.play-icon{
+  background-color: gold;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 2px;
+}
+.reg-play-video i{
+  /* background-color: gold; */
+  color: white;
+  font-size: 10px;
+}
+.find-course-img{
+  flex-grow: 1;
+}
+.find-course-img img{
+  width: 100%;
+}
+@media screen and (max-width: 1200px){
+  .find-course-img img{
+    width: 100% ; 
+  }
+  .available-courses p{
+    width: 200px;
+  }
+  .find-course .row{
+    gap: 200px;
+  }
+
+}
+@media screen and (max-width: 992px){
+  .find-course-img img{
+    width: 80% ; 
+  }
+  .available-courses p{
+    width: 200px;
+  }
+  .find-course .row{
+    gap: 100px;
+  }
+  @media screen and (max-width: 576px){
+    .find-course-guide p{
+      width: 100px;
+    }
+    .find-course-img img{
+      width: 100% ; 
+    }
+
+    
+
+}
 /* coursessssss */
 .courses{
   background-color: white;
@@ -128,6 +229,7 @@ body{
   display: flex;
   justify-content: space-around;
   align-items: center;
+  flex-wrap: wrap;
 }
 .card-body h2{
   font-size: 18px;
@@ -173,6 +275,9 @@ body{
   .available-courses p{
     width: 200px;
   }
+}
+@media screen and (max-width: 992px){
+  
 }
 /* Testimonials */
 .testimonials{

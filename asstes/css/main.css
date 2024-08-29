@@ -2,11 +2,12 @@
 
 body{
   font-family: var(--mainFont);
-  /* background-color: #eee; */
+
 }
 .header{
   background-color: #fff;
   padding: 15px 0;
+  filter: drop-shadow(2px 4px 9px grey);
 }
  /* logo */
 .header .logo{
@@ -78,7 +79,7 @@ body{
 /* find your course */
 .find-course{
   background-color: #fff;
-  padding: 0 0 40px 0;
+  padding: 24px 0 40px 0;
 }
 .find-course .row{
   align-items: flex-start;
@@ -138,15 +139,25 @@ body{
   font-size: 10px;
 }
 .find-course-img{
+  display: flex;
   flex-grow: 1;
 }
 .find-course-img img{
-  width: 100%;
+  width: 62%;
+
 }
+@media screen and (max-width: 1340px){
+  .find-course-img img{
+    width: 100% ; 
+    /* background-color: red; */
+  
+  }
+}
+
 @media screen and (max-width: 1200px){
   .find-course-img img{
     width: 100% ; 
-  }
+    }
   .available-courses p{
     width: 200px;
   }
@@ -165,6 +176,7 @@ body{
   .find-course .row{
     gap: 100px;
   }
+}
   @media screen and (max-width: 576px){
     .find-course-guide p{
       width: 100px;
@@ -276,9 +288,9 @@ body{
     width: 200px;
   }
 }
-@media screen and (max-width: 992px){
+/* @media screen and (max-width: 992px){
   
-}
+} */
 /* Testimonials */
 .testimonials{
   background-color: #fff;

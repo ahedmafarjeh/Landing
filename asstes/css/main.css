@@ -8,6 +8,9 @@ body{
   background-color: #fff;
   padding: 15px 0;
   filter: drop-shadow(2px 4px 9px grey);
+  position: sticky;
+  top: 0;
+  z-index: 2;
 }
  /* logo */
 .header .logo{
@@ -290,6 +293,72 @@ body{
   }
   .what-we-give .row{
     gap: 20px;
+  }
+}
+/* selected courses */
+.selected-course{
+  /* height: 550px; */
+  background-color: var(--mainColor);
+  padding: 20px 0;
+}
+.selected-course .row{
+  justify-content: flex-start;
+  gap: 80px;
+}
+.selected-course .start{
+
+  /* width: calc(  (100% - 80px)/ 2 ); */
+  display: flex;
+  flex-grow: 1;
+  
+}
+.selected-course .start img {
+  width: 100%;
+}
+
+.end{
+  width: calc(  (100% - 80px)/ 2 );
+  /* width: 25%; */
+  display: flex;
+  flex-wrap: wrap;
+  
+  flex-direction: column;
+  gap: 20px;
+}
+.end span:first-child{
+  color: #F0C932;
+}
+.end h2{
+  width: 200px;
+  color: white;
+}
+.end p{
+  font-size: 16px;
+  color: #DDDDDD;
+}
+
+.stat{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.stat div{
+  display: flex;
+  flex-direction: column; 
+}
+.end .stat div{
+  color: #DDDDDD;
+}
+.end .stat div span:first-child{
+  color: #F0C932;
+  font-weight: bold;
+}
+@media screen and (max-width: 768px){
+  .selected-course .start{
+    width: 100%;
+  }
+  .end{
+    width: 100%;
   }
 }
 /* coursessssss */
